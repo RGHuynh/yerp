@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Logo() {
+export default function Logo(props) {
   return(
     <div class="account--logo">
-      <img src="http://placehold.it/75" />
+      <img src={props.yerpImage} />
     </div>
   );
 }
