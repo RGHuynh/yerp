@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Link } from 'react-router-dom';
 import Logo from './components/Logo/Logo';
 import ButtonLogin from './components/ButtonLogin/ButtonLogin';
 import InputBox from './components/InputBox/InputBox';
@@ -33,7 +33,9 @@ export default class Sign extends React.Component {
                 <InputBox class="account--input" type="text" placeholder="Create a password" value={this.state.password} onChange={this.handleChange}></InputBox>
                 <ButtonLogin class="account--Btn" type="button" label="Create Account"></ButtonLogin>
               </form>
-              <h2 class="account--secondHeading">Already have an account? Sign in</h2>
+              <Link to='/login/index'>
+                <h2 class="account--secondHeading">Already have an account? Log in</h2>
+              </Link>
             </section>
           </section>
         </main>
