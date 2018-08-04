@@ -27,15 +27,15 @@ export default class Sign extends React.Component {
           <section class="account">
             <Logo yerpImage={YerpImage}></Logo> 
             <section class="account--form">
-              <h1 class="account--mainHeading">Sign in to your free YERP account</h1>
+              <h1 class="account--mainHeading">Sign up for a free YERP account</h1>
               <form>
                 <InputBox class="account--input" type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleChange}></InputBox>
                 <InputBox class="account--input" type="text" placeholder="Create a password" value={this.state.password} onChange={this.handleChange}></InputBox>
                 <ButtonLogin class="account--Btn" type="button" label="Create Account"></ButtonLogin>
               </form>
-              <Link to='/login/index'>
-                <h2 class="account--secondHeading">Already have an account? Log in</h2>
-              </Link>
+                <h2 class="account--secondHeading">
+                  Already have an account? <Link to='/login/index'>Log in</Link>
+                </h2>
             </section>
           </section>
         </main>

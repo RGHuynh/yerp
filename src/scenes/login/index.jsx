@@ -25,13 +25,17 @@ export default class Login extends React.Component{
           <section class="account">
             <Logo yerpImage={YerpImage}></Logo> 
             <section class="account--form">
-              <h1 class="account--mainHeading">Sign up for a free YERP account</h1>
+              <h1 class="account--mainHeading">Sign in to your free YERP account</h1>
               <form>
                 <InputBox class="account--input" type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleChange}></InputBox>
                 <InputBox class="account--input" type="text" placeholder="Password" value={this.state.password} onChange={this.handleChange}></InputBox>
                 <ButtonLogin class="account--Btn" type="button" label="Log in"></ButtonLogin>
               </form>
-              <h2 class="account--secondHeading">Reset Password</h2>
+              <h2 class="account--secondHeading">
+                <Link to="/reset">
+                  Reset Password
+                </Link> 
+              </h2>
             </section>
           </section>
         </main>

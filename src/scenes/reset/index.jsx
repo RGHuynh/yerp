@@ -8,14 +8,12 @@ import YerpImage from '../../Yerp.svg';
 
 export default class Reset extends React.Component {
   state = {
-    email: '',
-    password: ''
+    email: ''
   };
 
   handleChange = (event) => {
     this.setState({
-      email: event.target.email,
-      password: event.target.password
+      email: event.target.email
     });
 
   };

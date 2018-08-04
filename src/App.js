@@ -13,6 +13,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Sign} />
             <Route path="/login/index" component={Login} />
+            <Route path="/reset" component={Reset} />
           </Switch>
         </div>
       </Router>
