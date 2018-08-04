@@ -1,11 +1,12 @@
 
 body {
-  font-family: 'OpenSans'
+  font-family: 'OpenSans';
+
 }
 
 .background {
   background: linear-gradient(to bottom, rgba(49,254,149,70), rgba(24,84,255,88));
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
