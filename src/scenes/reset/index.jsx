@@ -6,7 +6,7 @@ import InputBox from './components/InputBox/InputBox';
 import './index.css';
 import YerpImage from '../../Yerp.svg';
 
-export default class Sign extends React.Component {
+export default class Reset extends React.Component {
   state = {
     email: '',
     password: ''
@@ -30,10 +30,8 @@ export default class Sign extends React.Component {
               <h1 class="account--mainHeading">Sign in to your free YERP account</h1>
               <form>
                 <InputBox class="account--input" type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleChange}></InputBox>
-                <InputBox class="account--input" type="text" placeholder="Create a password" value={this.state.password} onChange={this.handleChange}></InputBox>
-                <ButtonLogin class="account--Btn" type="button" label="Create Account"></ButtonLogin>
+                <ButtonLogin class="account--Btn" type="button" label="Search"></ButtonLogin>
               </form>
-              <h2 class="account--secondHeading">Already have an account? Sign in</h2>
             </section>
           </section>
         </main>
