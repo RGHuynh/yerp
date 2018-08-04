@@ -32,7 +32,7 @@ export default class Sign extends React.Component {
                 <InputBox class="account--input" type="text" placeholder="Create a password" value={this.state.password} onChange={this.handleChange}></InputBox>
                 <ButtonLogin class="account--Btn" type="button" label="Create Account"></ButtonLogin>
               </form>
-              <h2 class="account--secondHeading">Already hav an account? Sign in</h2>
+              <h2 class="account--secondHeading">Already have an account? Sign in</h2>
             </section>
           </section>
         </main>
