@@ -34,7 +34,7 @@ export default class Sign extends React.Component {
                 <ButtonLogin class="account--Btn" type="button" label="Create Account"></ButtonLogin>
               </form>
                 <h2 class="account--secondHeading">
-                  Already have an account? <Link to='/login/index'>Log in</Link>
+                  Already have an account? <Link to='/login'>Log in</Link>
                 </h2>
             </section>
           </section>

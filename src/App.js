@@ -12,7 +12,7 @@ class App extends Component {
         <div className="App">
           <Switch>
             <Route exact path="/" component={Sign} />
-            <Route path="/login/index" component={Login} />
+            <Route path="/login" component={Login} />
             <Route path="/reset" component={Reset} />
           </Switch>
         </div>
