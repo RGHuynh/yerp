@@ -5,7 +5,7 @@ export default class ButtonLogin extends React.Component {
   render() {
     return (
       <div>
-        <button class={this.props.class} type={this.props.type} value={this.props.value}>{this.props.label}</button>
+        <button className={this.props.class} type={this.props.type} value={this.props.value}>{this.props.label}</button>
       </div>
       
     );

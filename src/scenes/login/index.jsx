@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import Logo from './components/Logo/Logo';
-import ButtonLogin from './components/ButtonLogin/ButtonLogin';
-import InputBox from './components/InputBox/InputBox';
+import Logo from '../../components/Logo/Logo';
+import ButtonLogin from '../../components/ButtonLogin/ButtonLogin';
+import InputBox from '../../components/InputBox/InputBox';
 import './index.css';
 import YerpImage from '../../Yerp.svg';
 
