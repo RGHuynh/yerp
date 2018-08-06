@@ -1,10 +1,7 @@
 import React from 'react';
 
-export default class InputBox extends React.Component {
-  render() {
-    return(
-      <input className={this.props.class} type={this.props.type} placeholder={this.props.placeholder} value={this.props.value} onChange={this.props.onChange}/>
-    );
-  }
-
+export default function InputBox(props) {
+  return(
+    <input className={props.class} type={props.type} placeholder={props.placeholder} value={props.value} onChange={props.onChange} />
+  );
 }
