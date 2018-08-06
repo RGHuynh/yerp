@@ -1,11 +1,12 @@
 
 body {
-  font-family: 'OpenSans'
+  font-family: 'OpenSans';
+
 }
 
 .background {
   background: linear-gradient(to bottom, rgba(49,254,149,70), rgba(24,84,255,88));
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
@@ -19,6 +20,7 @@ body {
   color: #ffffff;
   text-align: center;
   font-weight: normal; 
+  margin-top: 35px;
 }
 
 input.account--input {
@@ -51,6 +53,9 @@ input.account--input::placeholder {
   padding: 16px 51px;
   border-radius: 5px;
   margin-top: 39px;
+  font-size: 18px;
+  color: rgba(69,192,178,.62);
+  font-weight: bold;
 }
 
 .account--logo {
@@ -63,6 +68,14 @@ input.account--input::placeholder {
   margin: auto;
 }
 
+.account--secondHeading {
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 20px;
+
+}
 @media screen and (max-width: 992px){
 
 }
