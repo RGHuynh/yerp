@@ -7,10 +7,13 @@
   function postCtrl($http){
     var ctrl = this;
 
-    ctrl.test = $http.get('http://localhost:3000/tweets.json').then(function(response){
-      console.log(response)
-    })
+    ctrl.test = function(){
+      $http.get('http://localhost:3000/tweets.json').then(function(response){
+        return response.data;
+      })
+    }
 
+    ctrl.test2 = "Hello World"
   }
 
   angular

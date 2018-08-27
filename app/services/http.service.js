@@ -7,21 +7,43 @@
 
     function httpService($http) {
       
-      function getPost(){
-        return ($http({method: 'GET', url: 'http://localhost:3000/tweets'})
-          .then(function(response){
-            return response;
-          }), function(response) {
-            return response
-          }
-        );
-      }
-
       var service = {
-        getPost: getPost
+        getPosts: getPosts,
+        postPost: postPost,
+        putPost: putPost,
+        deletePost: deletePost
       };
 
       return service ; 
 
+      /////
+
+      function getPosts(){
+        return (
+          $http
+            .get('http://localhost:3000/tweets.json')
+        );
+      }
+
+      function postPost(entry){
+        return (
+          $http
+            .post('http://localhost:3000/tweets', entry)
+        );
+      }
+
+      function putPost(entryID, updatedPostData){
+        return(
+          $http
+            .put('http://localhost:3000/tweets/' + entryID, updatedPostData)
+        );
+      }
+
+      function deletePost(entryID){
+        return(
+          $http
+            .delete('http://localhost:3000/tweets/' + entryID)
+        );
+      };
     }
 })();
