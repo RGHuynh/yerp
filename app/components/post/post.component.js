@@ -4,16 +4,18 @@
     controller: postCtrl
   }
 
-  function postCtrl($http){
+  postCtrl.$inject = ['httpService'];
+
+  function postCtrl(httpService){
     var ctrl = this;
 
-    ctrl.test = function(){
-      $http.get('http://localhost:3000/tweets.json').then(function(response){
-        return response.data;
-      })
-    }
+    ctrl.getPosts = httpService.getPosts
 
-    ctrl.test2 = "Hello World"
+    ctrl.postPost = httpService.postPost
+
+    ctrl.putPost = httpService.putPost
+
+    ctrl.deletePost = httpService.deletePost
   }
 
   angular
